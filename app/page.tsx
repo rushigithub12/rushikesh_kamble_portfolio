@@ -5,6 +5,7 @@ import GridBackGround from "@/components/shared/GridBackground";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
+import Experience from "@/components/sections/Experience";
 
 export default function Home() {
   useEffect(() => {
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
+      <Experience />
     </div>
   );
 }
