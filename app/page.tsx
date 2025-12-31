@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import GridBackGround from "@/components/shared/GridBackground";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   useEffect(() => {
@@ -14,6 +15,7 @@ export default function Home() {
       <GridBackGround />
       <Hero />
       <About />
+      <Skills />
     </div>
   );
 }
