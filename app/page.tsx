@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect } from "react";
 import GridBackGround from "@/components/shared/GridBackground";
-import { Button } from "@/components/ui/button";
 import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
 
 export default function Home() {
   useEffect(() => {
@@ -14,6 +13,7 @@ export default function Home() {
     <div className="relative">
       <GridBackGround />
       <Hero />
+      <About />
     </div>
   );
 }
