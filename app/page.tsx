@@ -17,6 +17,7 @@ export default function Home() {
   }, []);
   return (
     <div className="relative">
+      <Header />
       <GridBackGround />
       <Hero />
       <About />
@@ -24,6 +25,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
