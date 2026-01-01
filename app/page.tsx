@@ -7,6 +7,7 @@ import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
+import { Contact } from "lucide-react";
 
 export default function Home() {
   useEffect(() => {
@@ -20,6 +21,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Projects />
+      <Contact />
     </div>
   );
 }
