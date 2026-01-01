@@ -1,64 +1,51 @@
-import { ExternalLink, Github } from "lucide-react";
 import React from "react";
+import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "PBE (Photo-Based Estimation)",
-      category: "AI-Powered Insurance Platform",
+      title: "MERN FullStack Ecommerce App",
+      category: "Ecommerce",
       description:
-        "Enterprise-grade AI-powered photo capture and damage assessment platform for automotive insurance. Enables intelligent guided workflow with OCR and real-time image quality analysis.",
-      tech: ["React", "Redux", "TypeScript", "OCR API", "Material-UI"],
-      image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
+        "Built a production-grade full-stack e-commerce application using the MERN stack with a secure user storefront and role-based admin panel. Implemented authentication using Passport.js and JWT, along with dynamic product filtering, sorting, pagination, and persistent cart management. Integrated Stripe Payment Intents and webhooks for secure online payments and reliable order confirmation. Added automated email notifications for orders and password resets using Nodemailer. Deployed the server on Render and Frontend on Vercel with production-ready environment and security configurations.",
+      tech: [
+        "React",
+        "Redux-toolkit",
+        "React Hook Form",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Passport.js",
+        "JWT Authentication",
+        "Stripe",
+        "tailwind-css",
+        "Render",
+        "Vercel",
+      ],
+      image: "/projectFiles/EcommercePageScreenshot.png",
+      demoLink: "https://mern-e-commerce-app-nu.vercel.app",
+      repoLink: "https://github.com/rushigithub12/MERN-eCommerce-app.git",
       featured: true,
-    },
-    {
-      title: "ETOPUP Service Platform",
-      category: "Micro-Frontend Architecture",
-      description:
-        "Comprehensive dealer and retailer hierarchy management system. Built with micro-frontend architecture for modular development and scalability.",
-      tech: ["React", "Micro-frontends", "Redux", "Node.js"],
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      featured: true,
-    },
-    {
-      title: "Low Code UI Platform",
-      category: "Dynamic UI Builder",
-      description:
-        "Platform to build dynamic UIs with minimal code, expediting project delivery. Integrated with Fastify Node.js and Java microservices backend.",
-      tech: ["React", "Node.js", "Fastify", "Java", "REST API"],
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      featured: true,
-    },
-    {
-      title: "Bio-Compatibility ML Application",
-      category: "Healthcare & Machine Learning",
-      description:
-        "Web application for healthcare organizations to classify documents using ML algorithms. Features dynamic data visualization and reporting.",
-      tech: ["React", "Machine Learning", "Data Visualization", "REST API"],
-      image:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
     },
     {
       title: "Financial Dashboard",
       category: "Next.js Application",
       description:
-        "Modern financial dashboard built with Next.js featuring real-time data updates and interactive charts for financial analysis.",
-      tech: ["Next.js", "React", "TypeScript", "Chart.js"],
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Bio-Safety Management System",
-      category: "Research & Compliance",
-      description:
-        "Web application for research scientists to submit protocol registrations with intuitive interfaces and robust data validation.",
-      tech: ["React", "Redux", "Form Validation", "REST API"],
-      image:
-        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop",
+        "Developed a full-stack financial dashboard with public and authentication-protected routes, invoice CRUD, search and pagination, and server-side data fetching/mutations. Implemented secure authentication, form validation, error handling, performance optimizations, and SEO-ready metadata",
+      tech: [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "tailwind-css",
+        "postgres",
+        "next-auth",
+        "zod",
+      ],
+      image: "/projectFiles/Financial-dashboard-home.png",
+      demoLink: "https://financial-dashboard-nextjs-omega.vercel.app",
+      repoLink:
+        "https://github.com/rushigithub12/financial_dashboard_nextjs.git",
     },
   ];
 
@@ -109,20 +96,24 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-                  <button
-                    className="btn-ghost flex items-center gap-2 opacity-50 cursor-not-allowed"
-                    disabled
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-ghost flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity"
                   >
                     <ExternalLink size={14} />
                     LIVE DEMO
-                  </button>
-                  <button
-                    className="btn-ghost flex items-center gap-2 opacity-50 cursor-not-allowed"
-                    disabled
+                  </a>
+                  <a
+                    href={project.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-ghost flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity"
                   >
                     <Github size={14} />
                     SOURCE CODE
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}

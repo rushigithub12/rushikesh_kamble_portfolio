@@ -45,9 +45,7 @@ const Contact = () => {
               </p>
               <div className="card">
                 <div className="label-small mb-4">AVAILABILITY</div>
-                <div className="text-body">
-                  Open to freelance projects and full-time opportunities
-                </div>
+                <div className="text-body">Open to full-time opportunities</div>
               </div>
             </div>
 
